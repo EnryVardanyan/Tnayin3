@@ -62,22 +62,22 @@
 
 // 6. 
 
-// let matrix = [[[1,1,1],[1,1,1],[1,1,1]], [[1,1],[1,1]], [[1,0,0],[1,0,0],[1,0,0]], [[1,0,0],[1,0,0],[1,0,0]]]
-// function onlyOne(mat){
-//     let rememberLength = 0
-//     let result = 0
-//     for(arr of mat){
-//         for(arr1 of arr){
-//             let lowest = 1
-//             for(arr2 of arr1){
-//                 if(arr2 < lowest) lowest = arr2
-//             }
-//             if(lowest === 0) continue
-//             else if(rememberLength < arr.length) rememberLength = arr.length
-//         }
-//     }
-//     return rememberLength
-// }
-// console.log(onlyOne(matrix))
+let matrix = [[[1,1,1],[1,1,1],[1,1,1]], [[1,1],[1,1]], [[1,0,0],[1,0,0],[1,0,0]], [[1,0,0],[1,0,0],[1,0,0]]]
+function onlyOne(mat){
+    let rememberLength = 0
+    let result = 0
+    for(arr of mat){
+        for(arr1 of arr){
+            let lowest = 1
+            for(arr2 of arr1){
+                if(arr2 < lowest) lowest = arr2
+            }
+            if(lowest === 0) continue
+            else if(rememberLength < arr.length) rememberLength = arr.length
+        }
+    }
+    return rememberLength
+}
+console.log(onlyOne(matrix))
 
 
